@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>for-loop in jinja tags for data_render</h1>
+        <h1>name of the student is --- {{name}} --- </h1>
+
+        {% if age >= 18 %}
+            <h1>name of the student is --- {{age}} ---</h1>
+        {% else %}
+            <h1>Age of the person age is --- less than 18 ---</h1>
+        {% endif %}
+
+        <h1>Hobbies of the person</h1>
+        {% for h in hobbies %}
+            <h1>{{h}}</h1>
+        {% endfor %}
+
+
+        <h3><a href="{% url 'urlnavigation' %}">Cick here to go to url navigation page</a></h3>
+    </center>
+</body>
+</html>
